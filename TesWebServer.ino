@@ -11,7 +11,7 @@ ESP8266WebServer server(80);   //Web server object. Will be listening in port 80
 void setup() {
   FastLED.addLeds<WS2812, LED_PIN, GRB>(leds, NUM_LEDS);
   Serial.begin(115200);
-  WiFi.begin("SISI-CORP", "soetomo29"); //Connect to the WiFi network
+  WiFi.begin("SSID", "PASSWORD"); //Connect to the WiFi network
   
   while (WiFi.status() != WL_CONNECTED) { //Wait for connection
     delay(500);
