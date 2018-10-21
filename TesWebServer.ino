@@ -35,6 +35,7 @@ void handleGenericArgs() { //Handler
 
 void nyalakan(int R, int G, int B){
   int i=0;
+  
   while(i<NUM_LEDS){
     leds[i] = CRGB(R, G, B);
     i++;
